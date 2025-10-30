@@ -1,0 +1,18 @@
+Problem: Reverse a string in-place without using high-level functions like .reverse() or slicing.
+
+Solution: Use the two pointer technique to reverse a string without relying on built-in Python methods like .reverse() or slicing. The string is first converted to a list because strings in Python are immutable, and lists allow swapping elements. Two pointers, left and right, are initialized at the start and end of the list. In each iteration of the loop, the characters at these positions are swapped, and the pointers move toward each other. This process continues until the pointers meet or cross, ensuring all characters are reversed in place. Finally, the list is joined back into a string and returned as the result.
+
+
+Time complexity: 
+O(n)
+Space complexity: 
+O(1)
+
+
+test_cases = [
+        "hello",            
+        "world",            
+        "racecar",          
+        "SpaceX",           
+        "rocket"
+    ]
