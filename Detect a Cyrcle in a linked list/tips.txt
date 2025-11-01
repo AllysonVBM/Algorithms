@@ -1,0 +1,9 @@
+Problem: Given the head of a linked list, determine if it has a cycle.
+
+Solution: Use Floyd’s “tortoise and hare” cycle detection algorithm to check for a cycle in a linked list. Two pointers, slow and fast, start at the head of the list. The slow pointer moves one step at a time, while the fast pointer moves two steps at a time. If the linked list has a cycle, the fast pointer will eventually “lap” the slow pointer, and both will point to the same node, indicating a cycle. If the fast pointer reaches the end of the list (None), there is no cycle, and the function returns False.
+
+
+Time complexity: 
+O(n)
+Space complexity: 
+O(1)
