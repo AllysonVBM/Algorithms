@@ -1,0 +1,7 @@
+Problem:
+
+Given a string, find the length of the longest substring without repeating characters.
+
+Approach:
+
+Use a sliding window with a hash map to track seen characters and their indices, adjusting the window start to skip duplicates.
