@@ -1,8 +1,12 @@
-numbers = [7, 3, 6, 2, 0]
-size = len(numbers)
-for i in range(size -1): 
-    for j in range (size -i -1):
-        if numbers[j] > numbers[j + 1]:
-            numbers[j], numbers[j + 1] = numbers[j + 1], numbers[j]
+def bubble_sort(v):
+    n = len(v)
+    for i in range(n):
+        for j in range(0, n - i - 1):
+            if v[j] > v[j + 1]:
+                temp = v[j]
+                v[j] = v[j + 1]
+                v[j + 1] = temp
 
-print(numbers)
+v = [5, 2, 9, 1, 5, 6]
+bubble_sort(v)
+print(v)
